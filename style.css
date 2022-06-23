@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+*{
+    
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(52, 0, 89, 0.84), rgba(191, 170, 34, 0.735))
+}
+
+.container{
+    border: 2px solid rgb(0, 0, 0);
+    height: 60vh;
+    width: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-evenly;
+    background-image: linear-gradient(rgba(0, 0, 0 , 0.2), rgba(0,0,0,0.2)), url("img1.png");
+    background-size: cover;
+    
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    box-shadow: 3px 3px 20px rgb(0, 0, 0, 0.3);
+}
+
+#heading{
+    color: rgb(51, 47, 57);
+    background-color: rgb(240, 225, 13);
+    padding: 0 1rem;
+    border-radius: 20px;
+    font-family: 'Rancho', cursive;
+}
+button{
+    font-size: 1.5rem;
+    border: none;
+    border-radius:12px;
+    background-color: rebeccapurple;
+    padding: 0.5rem;
+    color: white;
+    font-family:  cursive;
+}
+#btn{
+    margin-bottom: 20px;
+    width: 60vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+p{
+    font-size: 3rem;
+    margin-top: 2rem;
+    font-weight: bold;
+}
+.move-top{
+    position: relative;
+    top:30px;
+}
+.move-bottom{
+    position: relative;
+    bottom:50px;
+}
+.move-right{
+    position: relative;
+    right: 70px;
+}
+.move-left{
+    position: relative;
+    left:70px;
+}
+
+#monkey{
+    height: 10rem;
+    margin-top: -5rem;
+    display:none;
+}
+ 
+@media only screen and (max-width: 600px) {
+    .container{
+        height: 300px;
+        width: 200px;
+    }
+    #heading{
+        font-size: 30px;
+        width: 180px;
+        /* font-weight: lighter; */
+    }
+    button{
+        font-size: 1rem;
+        padding: 0.3rem;
+    }
+    #monkey{
+        height: 7rem;
+        margin-top: -2rem;
+        display:none;
+    }
+    #btn{
+        margin-bottom: 20px;
+        width: 200px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+.move-top{
+    position: relative;
+    top:20px;
+}
+.move-bottom{
+    position: relative;
+    bottom:40px;
+}
+.move-right{
+    position: relative;
+    right: 40px;
+}
+.move-left{
+    position: relative;
+    left:23px;
+}
+  }
